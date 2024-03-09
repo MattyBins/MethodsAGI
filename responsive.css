@@ -1,0 +1,83 @@
+@media screen and (min-width: 320px) {
+    .site-title {
+      font-size: 2.8em;
+    }
+    .site-description {
+      font-size: 1.5em;
+    }
+  }
+  
+  @media screen and (min-width: 375px) {
+    .site-title {
+      font-size: 3em;
+    }
+    .site-description {
+      font-size: 1.65em;
+    }
+  }
+  
+  @media screen and (min-width: 414px) {
+    .site-title {
+      font-size: 3.2em;
+    }
+    .site-description {
+      font-size: 1.8em;
+    }
+  }
+  
+  @media screen and (min-width: 600px) {
+    .cards {
+      display: flex;
+      gap: 1em;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .card {
+      flex: 1 0 calc((100% / 3) - 2rem);
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .site-title {
+      font-size: 3em;
+    }
+    .site-description {
+      font-size: 1.65em;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .heroImage {
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+    .heroContent {
+      margin-left: 4em;
+      margin-bottom: 4em;
+    }
+    .site-title {
+      font-size: 3.45em;
+    }
+    .site-description {
+      font-size: 1.75em;
+    }
+  }
+  
+  @media screen and (min-width: 1366px) {
+    .site-title {
+      font-size: 3.5em;
+    }
+    .site-description {
+      font-size: 1.85em;
+    }
+  }
+  
+  @media screen and (min-width: 1920px) {
+    .site-title {
+      font-size: 3.6em;
+    }
+    .site-description {
+      font-size: 1.95em;
+    }
+  }
+  

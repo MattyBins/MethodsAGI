@@ -1,0 +1,465 @@
+/*--------------------------------------------------------------
+CSS Reset
+--------------------------------------------------------------*/
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+}
+
+body {
+	margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden],
+template {
+	display: none;
+}
+
+a {
+	background-color: transparent;
+}
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+mark {
+	background: #ff0;
+	color: #000;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 1em 40px;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+pre {
+	overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+button {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input {
+	line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+}
+
+optgroup {
+	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+/*--------------------------------------------------------------
+Typography Styles
+--------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+	margin-top: .75em;
+	margin-bottom: .25em;
+	clear: both;
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2.6em;
+}
+h3 {
+	font-size: 2.2em;
+}
+h4 {
+	font-size: 2em;
+}
+h5 {
+	font-size: 1.8em;
+}
+h6 {
+	font-size: 1.6em;
+}
+p {
+	margin-top: .5em;
+	margin-bottom: 1em;
+}
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+/*--------------------------------------------------------------
+Main Content Containers
+--------------------------------------------------------------*/
+.content {
+	display: flex;
+}
+.main-area {
+	width: 100%;
+}
+.post-content {
+	padding: 0;
+	margin: 0 1em;
+}
+/*--------------------------------------------------------------
+Card Layout
+--------------------------------------------------------------*/
+figure.thumbnail {
+	margin: 0;
+	padding: 0;
+}
+.card {
+	margin-top: 1em;
+	margin-bottom: 2em;
+	background: rgba(0, 0, 0, 0.1);
+}
+.card-content {
+	font-family: "Quicksand";
+	font-weight: 300;
+	padding: 1.4em;
+	text-align: center;
+}
+.card-content h3 {
+	font-family: "Quicksand";
+	font-weight: 300;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+.card-content h3 {
+	font-size: 1.35em;
+	line-height: 1.45;
+}
+.card a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 1);
+}
+.card a:hover {
+	text-decoration: underline;
+}
+/*--------------------------------------------------------------
+Header Styles
+--------------------------------------------------------------*/
+.masthead {
+	background-color: rgba(255, 255, 255);
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.centered {
+	display: flex;
+}
+
+.site-branding {
+	display: flex;
+	width: 100%;
+}
+
+.site-title-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.site-title {
+	font-family: 'Montserrat';
+	font-size: 2.25em;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: rgba(0, 0, 0);
+}
+/*--------------------------------------------------------------
+Hero Image
+--------------------------------------------------------------*/
+.heroImage {
+  /* replace bg image with Megan's illustration */
+	background-image: url(https://cdn.glitch.global/8e68d1f9-53a6-454b-8000-414e98c10002/sullen_teen.jpg?v=1686977474842);
+	height: 600px;
+	display: flex;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+}
+
+.heroTwimage {
+  /* replace bg image with Megan's illustration */
+  background-image: url(https://cdn.glitch.global/8e68d1f9-53a6-454b-8000-414e98c10002/hero_image.jpg?v=1686977505689);
+  height: 600px;
+	display: flex;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+}
+
+.heroContent {
+	max-width: 600px;
+	height: auto;
+	color: rgba(255, 255, 255);
+	text-align: left;
+	padding-bottom: 0.5em;
+  padding-right: 2em;
+}
+
+.heroContent h2 {
+	font-family: "Montserrat";
+	font-weight: 400;
+}
+
+.heroContent h4 {
+	font-family: "Quicksand";
+	font-weight: 300;
+}
+
+.heroButton {
+	background-color: rgba(10, 140, 200);
+	padding: 0.6em;
+	font-family: "Montserrat";
+	font-weight: 300;
+	color: rgba(255, 255, 255, 1);
+	border: 2px solid rgba(255, 255, 255);
+}
+/*--------------------------------------------------------------
+FooterLayout
+--------------------------------------------------------------*/
+.footer-area {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #f1f1f1;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.footer-area ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.footer-area a {
+	color: #f1f1f1;
+	text-decoration: none;
+}
+.footer-area a:hover {
+	text-decoration: underline;
+}
+.footer-one ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.footer-one li {
+	padding: .25em .5em;
+	font-size: 1em;
+	font-family: "Montserrat";
+}
+.footer-two {
+	font-size: .88em;
+	font-family: "Montserrat";
+	font-weight: 300;
+}
+.footer-three a {
+	font-size: 1.4em;
+}
+.footer-three ul {
+	display: flex;
+	flex-direction: row;
+}
+.footer-three li {
+	padding: .25em .5em;
+}
