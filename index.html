@@ -8,19 +8,16 @@
 
   <link rel="stylesheet" href="style.css" type="text/css" media="all">
   <link rel="stylesheet" href="responsive.css" type="text/css" media="all"> 
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@700&family=Quicksand&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="page-wrapper">
     <header class="masthead">
       <div class="centered">
       <div class="site-branding">
-        <div class="logo">
-          <!--logo image goes here-->
-        </div><!-- Close the logo section -->
-        <div class="site-title-text">
-          <h1 class="site-title">MethodsAGI</h1>
-        </div><!-- Close the site title section -->
+        <img src="https://www.dropbox.com/scl/fi/5htdrpk2bau08spkwgx0t/MethodsAGI-logo.png?rlkey=l27gdkmtlns0jmqml4t7n97c2&raw=1" alt="logo" class="logo"/>
       </div><!-- Close the site branding section -->
       </div><!-- Close the centered section -->
     </header><!-- Close the header section -->
@@ -29,27 +26,64 @@
       <main class="main-area">
         <div class="heroImage">
           <div class="heroContent">
-            <h2 id="heroHeader"></h2>
-            <a href="insert link to sign up"><button class="heroButton">Get started</button></a>
-            <a href="insert link to sign in"><button class="heroButton">Sign in</button></a>
+            <h1 id="heroHeader"></h1>
+            <a href="https://auth0.com/"><button class="heroButton">Get started</button></a>
+            <a href="https://auth0.com/"><button class="heroButtonAlt">Sign in</button></a>
           </div><!-- Close the hero content section -->
         </div><!-- Close the hero image section -->
 
+        <div class="about">
+          <div class="about-image">
+            <img src="https://www.dropbox.com/scl/fi/qrpjk6s8nlyiptw0iwwk7/methodsAGItest.PNG?rlkey=twhg3dyzm0bqkr82o2p1fmte2&raw=1" alt="software"/>
+          </div>
+          <div class="about-content">
+            <div class="about-text">
+              <p>More than 80% of the digital world is informing themselves via some form of AI or Search Generative Experience, such as the AI and algorithms found in Google and ChatGPT. How can we learn what they're learning? MethodsAGI enables researchers to simulate and analyze the AI and algorithms found in these everyday learning systems. Using simple A/B test simulations, MethodsAGI streamlines the process of collecting user interactions, highlighting qualitative differences, calculating statistical differences, and then visualizing and reporting the analysis.</p>
+            </div>
+        </div>
+        </div><!-- Close the about-content div -->
+
         <section class="post-content">
+          <div class="about-header">
+            <h1>FEATURED PROJECTS</h1>
+          </div>
           <div class="cards">
           <article class="card">
-            
-            <!-- insert live feed widget here -->
-            
+              <figure class="thumbnail">
+                <img src="https://www.dropbox.com/scl/fi/chq4c6p0hbbapme23gjaw/research-biometrics-image-grad-research.jpeg?rlkey=eynnu587tu9r077os5di93m83&raw=1" alt="research1"/>
+              </figure>
+              <div class="card-content">
+                <h2>Health Biometrics Research</h2>
+                <h4>University of South Carolina</h4>
+                <p>Paired with state-of-the-art biometrics tools, researchers at the Univsersity of South Carolina use MethodsAGI to explore participants' emotional responses to information.</p>
+              </div>
+            </a>
           </article>
-          </div>
 
           <article class="card">
+              <figure class="thumbnail">
+                <img src="https://www.dropbox.com/scl/fi/22ugr0goodrj4bceh934w/opened-ai-chat-laptop.jpg?rlkey=5xdzelx4hgsz0i9mzxi5sqwvq&raw=1" alt="research2"/>
+              </figure>
               <div class="card-content">
-                <h2>ChatGPT, simulated as you need it.</h2>
-                <p>Designed for state-of-the-art research, MethodsAGI brings the (FINISH LATER).</p>
+                <h2>Health Insurance Literacy</h2>
+                <h4>University of South Carolina</h4>
+                <p>Researchers at the Unversity of South Carolina investigated college students' search and information seeking patterns when looking for health insurance information.</p>
               </div>
+            </a>
           </article>
+
+          <!-- fill in once you have third example
+          <article class="card">
+              <figure class="thumbnail">
+                <img src="" alt="research3"/>
+              </figure>
+              <div class="card-content">
+                <h2>RESEARCH 3</h2>
+                <p>MORE ON THIS PROJECT</p>
+              </div>
+            </a>
+          </article>
+        -->
         </div>
 
         </section><!-- Close the post-content section -->

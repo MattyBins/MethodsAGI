@@ -2,7 +2,7 @@
 CSS Reset
 --------------------------------------------------------------*/
 html {
-	font-family: sans-serif;
+	font-family: "Roboto", sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -197,6 +197,10 @@ fieldset {
 	padding: 0.35em 0.625em 0.75em;
 }
 
+body {
+	background-color: rgba(220, 240, 255);
+}
+
 legend {
 	border: 0;
 	padding: 0;
@@ -228,7 +232,7 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 h1 {
-	font-size: 3em;
+	font-size: 3.5em;
 }
 h2 {
 	font-size: 2.6em;
@@ -284,6 +288,12 @@ Accessibility
 /*--------------------------------------------------------------
 Main Content Containers
 --------------------------------------------------------------*/
+#page-wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
 .content {
 	display: flex;
 }
@@ -304,36 +314,36 @@ figure.thumbnail {
 .card {
 	margin-top: 1em;
 	margin-bottom: 2em;
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(255, 255, 255);
+	border-radius: 8px;
 }
 .card-content {
-	font-family: "Quicksand";
+	font-family: "Roboto";
 	font-weight: 300;
 	padding: 1.4em;
 	text-align: center;
 }
-.card-content h3 {
-	font-family: "Quicksand";
-	font-weight: 300;
+.card-content h2 {
+	font-family: "Roboto";
+	font-weight: 700;
+	font-style: bold;
+	background: -webkit-linear-gradient(45deg, #aec458, #36b5a2, #007fc6, #422068);
+	background-size: 100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	margin-top: 0;
 	margin-bottom: 0.5em;
 }
-.card-content h3 {
-	font-size: 1.35em;
-	line-height: 1.45;
-}
 .card a {
 	text-decoration: none;
-	color: rgba(0, 0, 0, 1);
-}
-.card a:hover {
-	text-decoration: underline;
+	color: rgba(10, 0, 40);
+	border-radius: 8px;
 }
 /*--------------------------------------------------------------
 Header Styles
 --------------------------------------------------------------*/
 .masthead {
-	background-color: rgba(255, 255, 255);
+	background-color: rgba(220, 240, 255);
 	padding-left: 1em;
 	padding-right: 1em;
 }
@@ -347,44 +357,21 @@ Header Styles
 	width: 100%;
 }
 
-.site-title-text {
-	display: flex;
-	flex-direction: column;
-}
-
-.site-title {
-	font-family: 'Montserrat';
-	font-size: 2.25em;
-	font-weight: 400;
-	margin-top: 0;
-	margin-bottom: 0;
-	color: rgba(0, 0, 0);
+.logo {
+	max-width: 300px;
 }
 /*--------------------------------------------------------------
 Hero Image
 --------------------------------------------------------------*/
 .heroImage {
-  /* replace bg image with Megan's illustration */
-	background-image: url(https://cdn.glitch.global/8e68d1f9-53a6-454b-8000-414e98c10002/sullen_teen.jpg?v=1686977474842);
+	background-image: url(https://www.dropbox.com/scl/fi/ion7dekhrb2y06rnliej8/MethodsAGI-Banner1-vertical.png?rlkey=ef2pl3uwsk2egjebfndr3hsml&raw=1);
 	height: 600px;
 	display: flex;
 	background-position: center;
-	background-attachment: fixed;
 	background-size: cover;
 	justify-content: center;
 	align-items: center;
-}
-
-.heroTwimage {
-  /* replace bg image with Megan's illustration */
-  background-image: url(https://cdn.glitch.global/8e68d1f9-53a6-454b-8000-414e98c10002/hero_image.jpg?v=1686977505689);
-  height: 600px;
-	display: flex;
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
-	justify-content: center;
-	align-items: center;
+	border-radius: 8px;
 }
 
 .heroContent {
@@ -392,38 +379,86 @@ Hero Image
 	height: auto;
 	color: rgba(255, 255, 255);
 	text-align: left;
-	padding-bottom: 0.5em;
-  padding-right: 2em;
+	padding-top: 30%;
+	padding-left: 10%;
+	padding-right: 5em;
 }
 
-.heroContent h2 {
-	font-family: "Montserrat";
-	font-weight: 400;
+.heroContent h1 {
+	font-family: "Roboto";
+	font-weight: 700;
+	font-style: bold;
 }
 
 .heroContent h4 {
-	font-family: "Quicksand";
+	font-family: "Roboto";
 	font-weight: 300;
 }
 
 .heroButton {
-	background-color: rgba(10, 140, 200);
+	background-color: rgba(255, 255, 255);
 	padding: 0.6em;
-	font-family: "Montserrat";
+	font-family: "Roboto";
+	font-weight: 300;
+	color: rgba(0, 123, 255);
+	border: 2px solid rgba(255, 255, 255);
+	border-radius: 8px;
+}
+
+.heroButtonAlt {
+	background-color: rgba(100, 40, 200, 0);
+	padding: 0.6em;
+	font-family: "Roboto";
 	font-weight: 300;
 	color: rgba(255, 255, 255, 1);
 	border: 2px solid rgba(255, 255, 255);
+	border-radius: 8px;
 }
 /*--------------------------------------------------------------
-FooterLayout
+Content Layout
+--------------------------------------------------------------*/
+.about {
+	background-color: rgba(255,255,255,1);
+	margin-top: 2em;
+	padding: 2em;
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+}
+
+.about-content {
+	border-radius: 8px;
+	margin-right: 20px;
+}
+
+.about-image {
+	float: left;
+	max-width: 90%;
+}
+
+.about-header {
+	text-align: center;
+}
+
+.about-text {
+	background-color: rgba(0,0,0,0);
+	font-family: "Roboto";
+	font-size: 1.125em;
+	line-height: 1.5;
+	max-width: 70%;
+	margin: 1.5em auto;
+	padding: 1em;
+}
+/*--------------------------------------------------------------
+Footer Layout
 --------------------------------------------------------------*/
 .footer-area {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: #f1f1f1;
-	background-color: rgba(0, 0, 0, 0.8);
+	color: rgba(10, 0, 40);
+	background-color: rgba(255, 255, 255, 0.8);
 }
 .footer-area ul {
 	list-style: none;
@@ -431,35 +466,9 @@ FooterLayout
 	padding: 0;
 }
 .footer-area a {
-	color: #f1f1f1;
+	color: rgba(0,0,0);
 	text-decoration: none;
 }
 .footer-area a:hover {
 	text-decoration: underline;
-}
-.footer-one ul {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.footer-one li {
-	padding: .25em .5em;
-	font-size: 1em;
-	font-family: "Montserrat";
-}
-.footer-two {
-	font-size: .88em;
-	font-family: "Montserrat";
-	font-weight: 300;
-}
-.footer-three a {
-	font-size: 1.4em;
-}
-.footer-three ul {
-	display: flex;
-	flex-direction: row;
-}
-.footer-three li {
-	padding: .25em .5em;
 }

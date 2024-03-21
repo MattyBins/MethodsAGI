@@ -1,7 +1,12 @@
-// import TypeIt from "typeit";
+//import TypeIt from "typeit";
 
 new TypeIt ("#heroHeader", {
-    strings: "Test string",
-    speed: 75,
-    loop: true,
-  }).go();
+  speed: 40,
+  delay: 450
+})
+  .type("ChatGPT, as you need it", {delay: 275})
+  .move(-14)
+  .type("simulated ")
+  .move(14)
+  .type(".")
+  .go();

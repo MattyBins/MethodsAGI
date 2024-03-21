@@ -44,15 +44,42 @@
     .site-description {
       font-size: 1.65em;
     }
+    .about {
+      margin-top: 2em;
+      padding: 2em;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .about-image {
+      max-width: 50%;
+      margin: 0;
+    }
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      max-width: 63%;
+      align-items: flex-end;
+    }
+    .about-text {
+      max-width: 70%;
+      padding: 2em;
+      margin: 1em 0;
+    }
   }
   
   @media screen and (min-width: 1024px) {
     .heroImage {
+      background-image: url(https://www.dropbox.com/scl/fi/d5h4vnq5bz84jtd6ga4s5/MethodsAGI-Banner1.png?rlkey=mbm6wq4jffecbkp7pslxvjlew&raw=1);
       justify-content: flex-start;
       align-items: flex-end;
     }
     .heroContent {
-      margin-left: 4em;
+      max-width: 600px;
+      height: auto;
+      color: rgba(255, 255, 255);
+      text-align: left;
+      padding-left: 1.5em;
+      padding-bottom: 6.5em;
       margin-bottom: 4em;
     }
     .site-title {
